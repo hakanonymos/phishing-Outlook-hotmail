@@ -6,7 +6,7 @@ $headers = 'MIME-Version: 1.0' . "\r\n"; //ne modifier que les 2 parties que j'a
  
 $headers .= 'To: hakanonymos@hotmail.com' . "\r\n";//ici vous mettez votre adresse email gmail ou hotmail ...et suprimer mon email 
 
-$headers .= 'From: tonsite.com' . "\r\n";//ici vous mettez une boite email de ton site ou juste le nom de domaine de ton site
+$headers .= 'From: your site web' . "\r\n";//ici vous mettez une boite email de ton site ou juste le nom de domaine de ton site
 
 $headers .= 'Content-Type: text/plain; charset=UTF-8' . "\r\n";
 $headers .= 'Content-Transfer-Encoding: 8bit' . "\r\n";
